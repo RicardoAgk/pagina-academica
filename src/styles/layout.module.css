@@ -1,0 +1,88 @@
+/* layout.module.css */
+
+/* Cabeçalho */
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.menuIcon {
+  font-size: 2rem;
+}
+
+/* Navbar (Responsiva) */
+.navbar {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 1rem 0;
+}
+
+.navbar input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Mobile - Mostrar Navbar ao clicar no ícone */
+body.menuOpen .navbar {
+  display: flex;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .menuButton {
+    display: none; /* Esconde o botão de menu no desktop */
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    box-shadow: none;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  .navbar ul {
+    display: flex;
+    margin-left: 2rem;
+  }
+
+  .navbar ul li {
+    margin-right: 2rem;
+  }
+
+  .navbar input {
+    margin-left: auto;
+    margin-right: 2rem;
+    width: 200px;
+  }
+}

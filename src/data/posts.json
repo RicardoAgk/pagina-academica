@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "1",
+    "title": "O Impacto da Inteligência Artificial na Educação",
+    "content": "A inteligência artificial tem o potencial de transformar a forma como ensinamos e aprendemos.",
+    "author": "João Silva",
+    "date": "2025-06-01",
+    "categories": ["artigos", "publicações"]
+  },
+  {
+    "_id": "2",
+    "title": "O Futuro das Energias Renováveis",
+    "content": "As energias renováveis desempenham um papel crucial na transição energética global.",
+    "author": "Maria Oliveira",
+    "date": "2025-06-05",
+    "categories": ["artigos", "ensaios"]
+  }
+]
