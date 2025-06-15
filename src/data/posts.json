@@ -2,12 +2,12 @@
   {
     "_id": "001",
     "title": "My academic journey and the dream of dancing Funaná in China",
-    "content": "Since high school I've dreamed of algorithms and dance. After a PhD in Chaos Theory Applied to Tropical Rhythms, I'm preparing to move to China to study Funaná intensively.",
+    "content": "Since high school I've dreamed of algorithms and dance. After a PhD in Chaos Theory Applied to Tropical Rhythms, I'm preparing to move to China to study Funaná intensively.\n\nBut the roots of this journey reach deeper.\n\nI was born on a calhau in the Atlantic shore where time folds inwards, and where the population is evenly divided between bioluminescent goats, fadas (faeries) with PhDs in epistemology, and duendes who communicate exclusively through jazz solos. It was there, in the volcanic caverns of Lira Brava, that I first encountered the sacred text of *O Som que Move o Mundo* — a scroll written in octatonic scales and only legible under eclipse moonlight.\n\nAt the age of thirteen, I was initiated into the Order of the Rhythmic Spiral by the Elder Duende of Tempo, who told me: “To master movement, you must first unlearn stillness.” I spent the next years dancing barefoot across mossy cliff edges, translating entropic field equations into footwork, and learning to cook dimensionally unstable stews.\n\nNow, as I prepare to depart for China, I do so not merely as a student of dance, but as a vessel for the convergence of rhythm, myth and formal logic. In the shadow of the Yellow Mountains, I seek to awaken the sleeping dragon — not of legend, but of symbolic power, embedded deep in the dialectics of movement and thought.\n\nThrough the philosophy of science, I will dance Funaná with the precision of Gödel, the irreverence of Feyerabend, and the hips of a possessed cartographer. My goal is simple: to unify rhythm and reason, and by doing so, channel the dragon’s breath into a new epistemic dawn.",
     "author": "",
     "date": "2025-06-01",
     "categories": ["about"]
   },
-    {
+  {
     "_id": "016",
     "title": "Philosophy on a unicycle: balancing ideas and traffic",
     "content": "This keynote explores philosophical lectures delivered while unicycling through Lisbon's rush hour.",
@@ -127,7 +127,7 @@
     "date": "2020-12-01",
     "categories": ["articles"]
   },
-   {
+  {
     "_id": "030",
     "title": "Bureaucracy and the metaphysics of sandwich making",
     "content": "Exploring how public administration mirrors the existential dread of choosing between tuna and ham.",
@@ -326,5 +326,69 @@
     "author": "",
     "date": "2022-11-03",
     "categories": ["publications"]
+  },
+  {
+    "_id": "022",
+    "title": "Dialectics of the Dustbin: Waste Philosophy in Urban Lisbon",
+    "content": "One evening by the Alfama bins, I had an epiphany. The cycle of consumption and disposal reflects a dialectical struggle rarely acknowledged. This talk traverses Hegel, Marx, and the pungent realities of modern waste theory, drawing unexpected connections between recycling rhythms and the ontological status of leftovers. \n\nWe examine how urban sanitation workers embody the invisible labour that sustains societal appearances. In an unorthodox move, I invited a sanitation crew onstage. Their silence, posture, and rubber gloves became the philosophical apparatus. I argue that Lisbon's dumpsters are portals to truth, and the clanking of glass bottles is the sound of history unfolding.",
+    "author": "",
+    "date": "2024-03-04",
+    "categories": ["talks"]
+  },
+  {
+    "_id": "023",
+    "title": "Fado and Phenomenology: Melancholy as Method",
+    "content": "Through a live fado performance, this talk interrogates the role of saudade in phenomenological inquiry. What if Merleau-Ponty had cried listening to Amália Rodrigues? The session unfolds across voice, tears, and footnotes, as we map longing onto epistemology. \n\nI propose that saudade is not a feeling but a cognitive lens — a melancholic way of knowing. Combining Husserl's epoché with a bottle of red wine and a broken guitarra, the talk reveals how memory and loss intertwine as valid forms of knowledge production. Audience members wept, sang along, and some began questioning their thesis topics.",
+    "author": "",
+    "date": "2024-09-21",
+    "categories": ["talks"]
+  },
+  {
+    "_id": "024",
+    "title": "Beekeeping and the Ethics of Swarm Intelligence",
+    "content": "Published in the Journal of Unapplied Cognition, this piece examines hive behaviour through Kantian ethics and machine learning. Can we consider a collective organism morally responsible for honey theft? \n\nUsing slow-motion footage of bees hesitating mid-flight, I build a case for decentralised intention. A brief foray into cyborg theory connects the queen bee’s pheromonal control to modern-day corporate hierarchies. Field observations and awkward interviews with apiarists included. The conclusion? Bees might be anarchists in disguise — or gentle fascists with pollen.",
+    "author": "",
+    "date": "2024-05-11",
+    "categories": ["publications"]
+  },
+  {
+    "_id": "025",
+    "title": "Urban Lichens and the Politics of Patience",
+    "content": "Appearing in the International Review of Slow Politics, this paper traces the silent occupation of walls by lichen as a political statement. \n\nRather than protests, lichens wait. Slowly. Through comparative analysis with 1960s counterculture, we propose a 'mycelial theory of resistance'. Case studies include graffiti overtaken by moss in Porto, and the metaphysical implications of growing your own resistance on concrete. A must-read for anyone who thinks revolution can take centuries — and still succeed.",
+    "author": "",
+    "date": "2024-11-28",
+    "categories": ["publications"]
+  },
+  {
+    "_id": "026",
+    "title": "The Algorithm Whisperer: A Journey into Intuitive Coding",
+    "content": "This long-read explores the life of a backend developer who claims to communicate with algorithms in dreams. \n\nCombining journal entries with speculative fiction, we follow the story of code written in trance and systems that write back. The author describes one moment of waking up with perfect recursive functions written in tomato sauce on the kitchen floor. Whether this is mental illness or genius, the article offers an unsettling portrait of post-human creativity.",
+    "author": "",
+    "date": "2024-01-19",
+    "categories": ["articles"]
+  },
+  {
+    "_id": "027",
+    "title": "Napping as Political Protest: Sleep-ins and Soft Power",
+    "content": "Inspired by civil disobedience and narcoleptic activism, this article dives into the world of protest naps — from university libraries to financial districts. \n\nInterviews with horizontal philosophers and dream theorists explore how lying down is a form of standing up. One activist group trained pigeons to land on sleeping bodies, forcing city councils to address the issue. Their motto? 'We rest, therefore we resist.'",
+    "author": "",
+    "date": "2024-07-06",
+    "categories": ["articles"]
+  },
+  {
+    "_id": "028",
+    "title": "On the Necessity of Talking to Plants",
+    "content": "A speculative essay arguing that philosophy's next great turn will be vegetal. \n\nThrough case studies, personal stories, and one particularly eloquent cactus, we approach interspecies dialogue as the ethical frontier of academia. The author recounts a heated debate with a bonsai over Nietzsche’s eternal return. Experiments include reciting Foucault to ferns and getting unexpectedly clear responses. Perhaps photosynthesis is the first language — we’ve just forgotten how to listen.",
+    "author": "",
+    "date": "2024-04-15",
+    "categories": ["essays"]
+  },
+  {
+    "_id": "029",
+    "title": "Melancholy in the Age of Smart Mirrors",
+    "content": "In this reflective piece, the author recounts mornings spent analysing his own reflection through an AI-powered mirror. \n\nThe mirror, designed to enhance mood, eventually develops a depressive tone. As days go by, it starts quoting Kierkegaard and requesting updates on the user’s childhood. With echoes of Barthes and Black Mirror, this essay investigates automated affirmation and the algorithmic self. Ultimately, the mirror becomes more honest than the user can bear — and is unplugged with a shaky hand.",
+    "author": "",
+    "date": "2024-12-03",
+    "categories": ["essays"]
   }
 ]
