@@ -1,36 +1,48 @@
+// src/components/PostList.tsx
+"use client";
+
+import Link from "next/link";
+import postsData from "@/data/posts.json";
+import { useBlogStore } from "@/store/useBlogStore";
 import styles from "../styles/postList.module.css";
-import postsData from "../data/posts.json";
 
-type Props = {
-  searchTerm: string;
-  selectedCategory: string;
-};
+export default function PostList() {
+  const { searchTerm, selectedCategory } = useBlogStore();
+  const term = searchTerm.toLowerCase();
 
-const PostList = ({ searchTerm, selectedCategory }: Props) => {
-  const filtered = postsData.filter((post) => {
-    const matchesCategory = selectedCategory
-      ? post.categories.includes(selectedCategory)
-      : true;
+  const filtered = postsData
+    .filter((post) => {
+      const matchesCategory = selectedCategory
+        ? post.categories.includes(selectedCategory)
+        : true;
 
-    const matchesSearch = searchTerm
-      ? post.title.toLowerCase().includes(searchTerm.toLowerCase())
-      : true;
+      const matchesSearch = term
+        ? post.title.toLowerCase().includes(term) ||
+          post.content.toLowerCase().includes(term) ||
+          post.date.toLowerCase().includes(term) ||
+          post.categories.some((cat) => cat.toLowerCase().includes(term))
+        : true;
 
-    return matchesCategory && matchesSearch;
-  });
+      return matchesCategory && matchesSearch && post.categories[0] !== "about";
+    })
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return (
-    <div className={styles.gridContainer}>
-      {filtered.map((post) => (
-        <div key={post._id} className={styles.card}>
-          <h4 className={styles.title}>{post.title}</h4>
-          <p className={styles.excerpt}>{post.content.substring(0, 150)}...</p>
-          <p className={styles.date}>{post.date}</p>
-        </div>
-      ))}
-    </div>
+    <section className={styles.container}>
+      <div className={styles.gridContainer}>
+        {filtered.map((post) => (
+          <Link key={post._id} href={`/post/${post._id}`} className={styles.card}>
+            <div>
+              <h3 className={styles.title}>{post.title}</h3>
+              <p className={styles.excerpt}>{post.content.slice(0, 100)}...</p>
+            </div>
+            <div className={styles.meta}>
+              <div className={styles.category}>{post.categories[0]}</div>
+              <div className={styles.date}>{post.date}</div>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </section>
   );
-};
-
-export default PostList;
-4
+}

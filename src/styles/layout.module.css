@@ -1,27 +1,3 @@
-/* layout.module.css */
-
-/* Cabeçalho */
-.headerContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.menuButton {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.menuIcon {
-  font-size: 2rem;
-}
-
-/* Navbar (Responsiva) */
 .navbar {
   display: none;
   flex-direction: column;

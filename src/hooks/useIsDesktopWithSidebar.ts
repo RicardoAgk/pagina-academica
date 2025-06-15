@@ -1,4 +1,3 @@
-// src/hooks/useIsDesktopWithSidebar.ts
 import { useState, useEffect } from "react";
 
 export function useIsDesktopWithSidebar(breakpoint = 768) {
@@ -9,7 +8,7 @@ export function useIsDesktopWithSidebar(breakpoint = 768) {
     const checkViewport = () => {
       const desktop = window.innerWidth >= breakpoint;
       setIsDesktop(desktop);
-      setIsSidebarOpen(desktop); // Sidebar aberta se for desktop
+      setIsSidebarOpen(desktop);
     };
 
     checkViewport();
