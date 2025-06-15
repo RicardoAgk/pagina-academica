@@ -20,9 +20,6 @@ export default function Navbar() {
   const router = useRouter();
 
   useEffect(() => {
-    // Match across multiple fields
-    const term = debouncedSearch.toLowerCase();
-
     setSearchTerm(debouncedSearch); // Still update the store for fallback usage
   }, [debouncedSearch, setSearchTerm]);
 
