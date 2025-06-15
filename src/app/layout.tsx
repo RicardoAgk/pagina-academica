@@ -21,7 +21,7 @@ const quicksand = Quicksand({
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen] = useState(false);
 
   useEffect(() => {
     if (menuOpen) {
