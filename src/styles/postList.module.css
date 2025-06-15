@@ -17,8 +17,8 @@
 .gridContainer {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
-  padding: 1.25rem 1rem;
+  gap: 1rem;
+  padding: 1.25rem 0.25rem;
 }
 
 @media (min-width: 640px) {
@@ -34,13 +34,13 @@
 }
 
 .card {
-  background-color: white;
+  background-color: var(--color-card);
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
   text-decoration: none;
-  color: inherit;
+  color: var(--color-text);
   display: flex;
   flex-direction: column;
   justify-content: space-between; 
@@ -53,6 +53,9 @@
 
 .card:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  h3 {
+    color: var(--color-hover);
+  }
 }
 
 .meta {

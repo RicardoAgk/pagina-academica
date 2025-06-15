@@ -1,9 +1,12 @@
-'use client';
 
-import { useState, useEffect } from "react";
-import styles from "../styles/layout.module.css"; // Estilos do layout
+import type { Metadata } from "next";
 import { Nunito, Quicksand } from "next/font/google";
 import "../styles/globals.css";
+
+export const metadata: Metadata = {
+  title: "João Pinheiro",
+  description: "",
+};
 
 // Fontes
 const nunito = Nunito({
@@ -21,23 +24,12 @@ const quicksand = Quicksand({
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  const [menuOpen] = useState(false);
-
-  useEffect(() => {
-    if (menuOpen) {
-      document.body.classList.add(styles.menuOpen);
-    } else {
-      document.body.classList.remove(styles.menuOpen);
-    }
-  }, [menuOpen]);
-
   return (
     <>
-    <html lang="pt-PT" className={`${nunito.variable} ${quicksand.variable}`}>
-      <body className={`${nunito.variable}`}>
-        {children}
-      </body>
-    </html>
+      <html lang="pt-PT" className={`${nunito.variable} ${quicksand.variable}`}>
+        <body className={`${nunito.variable}`}>{children}
+        </body>
+      </html>
     </>
   );
 }

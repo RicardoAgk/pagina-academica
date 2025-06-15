@@ -1,10 +1,26 @@
-/* Estilos Globais */
-body {
-  font-family: 'Nunito', sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
-  margin: 0;
-  padding: 0;
+:root {
+  --color-bg: #f4f1ec; /* um off-white com tom oliva claro */
+  --color-card: #e8e5de; /* fundo dos cards, suave e distinto */
+  --color-title: #2b2b2b; /* tom sépia-acastanhado */
+  --color-text: #57534e; /* cinzento castanho para leitura prolongada */
+  --color-muted: #8b857d; /* cinzento quente, discreto */
+  --color-accent: #7f9172;
+  --color-hover: #5c2a1d;
 }
 
+[data-theme="dark"] {
+  --color-bg: #1e1d1b;
+  --color-card: #2b2a2c;
+  --color-title: #dcd6cb;
+  --color-text: #c2bdb6;
+  --color-muted: #8f8779;
+  --color-accent: #a7ba9c;
+  --color-hover: #d8d0c0;
+}
 
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Nunito", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
