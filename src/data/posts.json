@@ -1,18 +1,330 @@
 [
   {
-    "_id": "1",
-    "title": "O Impacto da Inteligência Artificial na Educação",
-    "content": "A inteligência artificial tem o potencial de transformar a forma como ensinamos e aprendemos.",
-    "author": "João Silva",
+    "_id": "001",
+    "title": "My academic journey and the dream of dancing Funaná in China",
+    "content": "Since high school I've dreamed of algorithms and dance. After a PhD in Chaos Theory Applied to Tropical Rhythms, I'm preparing to move to China to study Funaná intensively.",
+    "author": "",
     "date": "2025-06-01",
-    "categories": ["artigos", "publicações"]
+    "categories": ["about"]
+  },
+    {
+    "_id": "016",
+    "title": "Philosophy on a unicycle: balancing ideas and traffic",
+    "content": "This keynote explores philosophical lectures delivered while unicycling through Lisbon's rush hour.",
+    "author": "",
+    "date": "2020-10-22",
+    "categories": ["talks"]
   },
   {
-    "_id": "2",
-    "title": "O Futuro das Energias Renováveis",
-    "content": "As energias renováveis desempenham um papel crucial na transição energética global.",
-    "author": "Maria Oliveira",
-    "date": "2025-06-05",
-    "categories": ["artigos", "ensaios"]
+    "_id": "017",
+    "title": "When goats debate: rural rhetoric and applied logic",
+    "content": "We analyse goat herding in Trás-os-Montes as a metaphor for critical thinking.",
+    "author": "",
+    "date": "2019-05-13",
+    "categories": ["talks"]
+  },
+  {
+    "_id": "018",
+    "title": "The existential crisis of plastic plants",
+    "content": "Plastic plants decorate our offices but feel nothing. Or do they?",
+    "author": "",
+    "date": "2021-01-07",
+    "categories": ["talks"]
+  },
+  {
+    "_id": "019",
+    "title": "Minimalism in sex education: less is less",
+    "content": "This presentation argues for an approach that teaches abstinence through aggressive decluttering.",
+    "author": "",
+    "date": "2022-04-17",
+    "categories": ["talks"]
+  },
+  {
+    "_id": "020",
+    "title": "Sleeping with Nietzsche: a bedtime routine",
+    "content": "An exploration of reading Nietzsche in bed and the impact on dreams, libido and back pain.",
+    "author": "",
+    "date": "2018-12-19",
+    "categories": ["talks"]
+  },
+  {
+    "_id": "021",
+    "title": "Depressed dolphins and the ethics of sonar poetry",
+    "content": "A study on emotional resonance in marine mammal communication and underwater slam poetry.",
+    "author": "",
+    "date": "2023-08-29",
+    "categories": ["talks"]
+  },
+  {
+    "_id": "002",
+    "title": "The philosophy of procrastination: a personal manifesto",
+    "content": "Why I put off writing this article until the last minute, and why that’s okay.",
+    "author": "",
+    "date": "2023-03-15",
+    "categories": ["articles"]
+  },
+  {
+    "_id": "003",
+    "title": "The absurdity of socks: a philosophical inquiry",
+    "content": "Exploring the existential dread of mismatched socks and their implications on modern life.",
+    "author": "",
+    "date": "2020-11-05",
+    "categories": ["articles"]
+  },
+  {
+    "_id": "004",
+    "title": "How to write a thesis while ignoring all advice",
+    "content": "A guide to academic success through selective hearing and creative avoidance.",
+    "author": "",
+    "date": "2022-07-20",
+    "categories": ["articles"]
+  },
+  {
+    "_id": "005",
+    "title": "The philosophy of procrastination: a personal manifesto",
+    "content": "Why I put off writing this article until the last minute, and why that’s okay.",
+    "author": "",
+    "date": "2023-03-15",
+    "categories": ["articles"]
+  },
+  {
+    "_id": "006",
+    "title": "Existentialism in the supermarket checkout line",
+    "content": "Waiting in line surrounded by groceries, I finally understood Camus.",
+    "author": "",
+    "date": "2019-06-15",
+    "categories": ["articles"]
+  },
+  {
+    "_id": "007",
+    "title": "Why squirrels might be the next philosophers",
+    "content": "Squirrels display the perfect balance of chaos and reflection.",
+    "author": "",
+    "date": "2021-12-09",
+    "categories": ["articles"]
+  },
+  {
+    "_id": "008",
+    "title": "Portugal's obsession with tiles and their symbolic meaning",
+    "content": "A semiotic exploration of bathroom walls and political ideologies.",
+    "author": "",
+    "date": "2023-02-04",
+    "categories": ["articles"]
+  },
+  {
+    "_id": "009",
+    "title": "The metaphysical implications of missing socks",
+    "content": "A study in domestic loss and parallel dimensions.",
+    "author": "",
+    "date": "2018-08-23",
+    "categories": ["articles"]
+  },
+  {
+    "_id": "010",
+    "title": "Onion layers and the self: a philosophical analogy",
+    "content": "We peel, we cry, we understand ourselves.",
+    "author": "",
+    "date": "2020-12-01",
+    "categories": ["articles"]
+  },
+   {
+    "_id": "030",
+    "title": "Bureaucracy and the metaphysics of sandwich making",
+    "content": "Exploring how public administration mirrors the existential dread of choosing between tuna and ham.",
+    "author": "",
+    "date": "2019-04-17",
+    "categories": ["articles"]
+  },
+  {
+    "_id": "031",
+    "title": "The moral compass of snails",
+    "content": "If a snail chooses lettuce over cabbage, is it making an ethical decision?",
+    "author": "",
+    "date": "2020-06-23",
+    "categories": ["articles"]
+  },
+  {
+    "_id": "032",
+    "title": "Postmodern loneliness in IKEA showrooms",
+    "content": "What if all these staged rooms are where I feel most seen?",
+    "author": "",
+    "date": "2021-02-14",
+    "categories": ["articles"]
+  },
+  {
+    "_id": "033",
+    "title": "Lisbon trams and the illusion of free will",
+    "content": "Once you're on, you just have to accept the route — just like life.",
+    "author": "",
+    "date": "2022-10-30",
+    "categories": ["articles"]
+  },
+  {
+    "_id": "034",
+    "title": "Yoga for philosophers: stretching doubt into clarity",
+    "content": "Breathing exercises that help you accept that truth is unknowable.",
+    "author": "",
+    "date": "2023-03-04",
+    "categories": ["articles"]
+  },
+  {
+    "_id": "035",
+    "title": "A phenomenology of laundry",
+    "content": "Folding socks as a ritual of being-in-the-world.",
+    "author": "",
+    "date": "2020-08-07",
+    "categories": ["articles"]
+  },
+  {
+    "_id": "036",
+    "title": "Dogs, loyalty and late-stage capitalism",
+    "content": "Canine affection as resistance to consumerist alienation.",
+    "author": "",
+    "date": "2018-12-12",
+    "categories": ["articles"]
+  },
+  {
+    "_id": "037",
+    "title": "Elevator etiquette and the collapse of Western civilisation",
+    "content": "An analysis of how avoiding eye contact on the fifth floor is symbolic of broader decline.",
+    "author": "",
+    "date": "2021-11-09",
+    "categories": ["articles"]
+  },
+  {
+    "_id": "038",
+    "title": "Intermittent fasting for thoughts",
+    "content": "Limiting your thinking windows to 8 hours a day might be the key to happiness.",
+    "author": "",
+    "date": "2022-01-19",
+    "categories": ["articles"]
+  },
+  {
+    "_id": "039",
+    "title": "Can sadness be composted?",
+    "content": "Transforming emotional waste into fertile ground for radical ideas.",
+    "author": "",
+    "date": "2023-09-11",
+    "categories": ["articles"]
+  },
+  {
+    "_id": "011",
+    "title": "Publishing while depressed: productivity tips from a sad hamster",
+    "content": "How a small rodent taught me the value of routine and melancholy.",
+    "author": "",
+    "date": "2021-04-18",
+    "categories": ["publications"]
+  },
+  {
+    "_id": "012",
+    "title": "Comparative linguistics through angry taxi drivers",
+    "content": "Grammatical insights from Lisbon, Rome and Mumbai.",
+    "author": "",
+    "date": "2019-10-11",
+    "categories": ["publications"]
+  },
+  {
+    "_id": "013",
+    "title": "The impact of caffeine on philosophical thought",
+    "content": "Descartes drank 4 espressos before declaring anything.",
+    "author": "",
+    "date": "2020-07-27",
+    "categories": ["publications"]
+  },
+  {
+    "_id": "014",
+    "title": "Bees as bureaucrats: lessons from the hive",
+    "content": "An analysis of hive hierarchy and its parallels in academia.",
+    "author": "",
+    "date": "2022-03-05",
+    "categories": ["publications"]
+  },
+  {
+    "_id": "015",
+    "title": "On flirting and quantum mechanics",
+    "content": "You never know if you’re liked until you’re observed.",
+    "author": "",
+    "date": "2018-01-31",
+    "categories": ["publications"]
+  },
+  {
+    "_id": "040",
+    "title": "A history of Portuguese chairs that squeak",
+    "content": "An acoustic timeline of wooden resistance from 1750 to IKEA.",
+    "author": "",
+    "date": "2018-03-21",
+    "categories": ["publications"]
+  },
+  {
+    "_id": "041",
+    "title": "Rural flirtation and the evolution of sheep metaphors",
+    "content": "Tracking romantic metaphors in agricultural literature.",
+    "author": "",
+    "date": "2020-09-30",
+    "categories": ["publications"]
+  },
+  {
+    "_id": "042",
+    "title": "Plants that ghost you back: emotional intelligence in cacti",
+    "content": "When your cactus gives you the silent treatment, maybe it’s personal.",
+    "author": "",
+    "date": "2021-06-15",
+    "categories": ["publications"]
+  },
+  {
+    "_id": "043",
+    "title": "Portugal’s secret teleportation ministry",
+    "content": "A forgotten cabinet-level institution that explained Lisbon traffic.",
+    "author": "",
+    "date": "2019-01-04",
+    "categories": ["publications"]
+  },
+  {
+    "_id": "044",
+    "title": "The geometry of saudade",
+    "content": "Trying to mathematically model the Portuguese feeling of longing using donut-shaped sadness.",
+    "author": "",
+    "date": "2022-05-08",
+    "categories": ["publications"]
+  },
+  {
+    "_id": "045",
+    "title": "Fado lyrics and the theory of everything",
+    "content": "Unified physics through tragic vocals and minor chords.",
+    "author": "",
+    "date": "2023-02-20",
+    "categories": ["publications"]
+  },
+  {
+    "_id": "046",
+    "title": "Public transport philosophy: standing existentialism",
+    "content": "How waiting at a bus stop can teach you patience and the absurd.",
+    "author": "",
+    "date": "2020-12-11",
+    "categories": ["publications"]
+  },
+  {
+    "_id": "047",
+    "title": "A sociolinguistic analysis of grocery lists",
+    "content": "Comparing how different cultures write 'toilet paper'.",
+    "author": "",
+    "date": "2019-06-06",
+    "categories": ["publications"]
+  },
+  {
+    "_id": "048",
+    "title": "Portuguese street tiles and secret cartographies",
+    "content": "Mapping ancestral wisdom encoded in sidewalk patterns.",
+    "author": "",
+    "date": "2021-07-17",
+    "categories": ["publications"]
+  },
+  {
+    "_id": "049",
+    "title": "The erotic undertones of medieval fish recipes",
+    "content": "Cod as metaphor: a spicy reassessment of the 12th century.",
+    "author": "",
+    "date": "2022-11-03",
+    "categories": ["publications"]
   }
 ]

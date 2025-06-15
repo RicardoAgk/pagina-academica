@@ -1,63 +1,51 @@
-// src/components/Navbar.tsx
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import styles from "../styles/navbar.module.css";
-import { useIsDesktopWithSidebar } from "../hooks/useIsDesktopWithSidebar";
+import { useBlogStore } from "@/store/useBlogStore";
+import { useIsDesktopWithSidebar } from "@/hooks/useIsDesktopWithSidebar";
 
 const categories = [
-  "Sobre",
-  "Apresentações",
-  "Publicações",
-  "Artigos",
-  "Ensaios",
+  "about",
+  "talks",
+  "publications",
+  "articles",
+  "essays",
 ];
 
-export default function Navbar({
-  onCategorySelect,
-}: {
-  onCategorySelect: (cat: string) => void;
-}) {
+export default function Navbar() {
   const { isDesktop, isSidebarOpen, setIsSidebarOpen } =
-    useIsDesktopWithSidebar(768);
-  const [search, setSearch] = useState("");
-  const [onlySearch, setOnlySearch] = useState(false);
-  const inputRef = useRef<HTMLInputElement>(null);
+    useIsDesktopWithSidebar();
+  const { setSearchTerm, setSelectedCategory } = useBlogStore();
 
-  useEffect(() => {
-    if (onlySearch && inputRef.current) {
-      inputRef.current.focus();
-    }
-  }, [onlySearch]);
+  const [searchValue, setSearchValue] = useState("");
 
-  useEffect(() => {
-    if (isDesktop) {
-      setIsSidebarOpen(true);
-      setOnlySearch(false);
-    }
-  }, [isDesktop]);
-
-  const toggleMenu = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-    setOnlySearch(false);
-  };
-
-  const handleSearchClick = () => {
-    setOnlySearch(true);
-  };
-
-  const handleCategoryClick = (cat: string) => {
-    onCategorySelect(cat);
-    setOnlySearch(false);
+  const handleCategoryClick = (category: string) => {
+    setSelectedCategory(category);
     if (!isDesktop) setIsSidebarOpen(false);
+  };
+
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchValue(e.target.value);
+    setSearchTerm(e.target.value);
+  };
+
+  const handleSearchToggle = () => {
+    if (!isDesktop) {
+      setIsSidebarOpen((prev) => !prev);
+    }
   };
 
   return (
     <header className={styles.header}>
       <div className={styles.headerContent}>
-        <h1 className={styles.title}>João Silva</h1>
+        <h1 className={styles.title}>João Pinheiro</h1>
         {!isDesktop && (
-          <button className={styles.menuButton} onClick={toggleMenu}>
+          <button
+            onClick={handleSearchToggle}
+            className={styles.menuButton}
+            aria-label="Open menu"
+          >
             ☰
           </button>
         )}
@@ -70,42 +58,40 @@ export default function Navbar({
               {categories.map((cat) => (
                 <button
                   key={cat}
-                  onClick={() => handleCategoryClick(cat)}
                   className={styles.navItem}
+                  onClick={() => handleCategoryClick(cat)}
                 >
                   {cat}
                 </button>
               ))}
-
-              {(onlySearch || isDesktop) && (
-                <div className={styles.searchBar}>
-                  <label htmlFor="search-input" className="sr-only">
-                    Pesquisar
-                  </label>
-                  <input
-                    id="search-input"
-                    ref={inputRef}
-                    type="text"
-                    value={search}
-                    onChange={(e) => setSearch(e.target.value)}
-                    placeholder="Pesquisar artigos..."
-                  />
-                </div>
-              )}
             </div>
-
-            {!onlySearch && !isDesktop && (
-              <div>
-                <button
-                  className={styles.searchIconButton}
-                  onClick={handleSearchClick}
-                  aria-label="Ativar pesquisa"
-                >
-                  🔍
-                </button>
-              </div>
+            {!isDesktop && (
+              <button
+                className={styles.searchIconButton}
+                onClick={() => {
+                  setSelectedCategory("");
+                }}
+                aria-label="Search"
+              >
+                🔍
+              </button>
             )}
           </div>
+
+          {(isDesktop || !isDesktop) && (
+            <div className={styles.searchBar}>
+              <label htmlFor="search" className={styles["sr-only"]}>
+                Pesquisar
+              </label>
+              <input
+                id="search"
+                type="text"
+                value={searchValue}
+                onChange={handleSearchChange}
+                placeholder="Search..."
+              />
+            </div>
+          )}
         </nav>
       )}
     </header>

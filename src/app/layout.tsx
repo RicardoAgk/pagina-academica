@@ -31,10 +31,6 @@ export default function RootLayout({
     }
   }, [menuOpen]);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
   return (
     <>
     <html lang="pt-PT" className={`${nunito.variable} ${quicksand.variable}`}>
