@@ -1,11 +1,12 @@
-"use client";
-
+import styles from "../styles/postList.module.css";
 import postsData from "../data/posts.json";
-import { useBlogStore } from "@/store/useBlogStore";
 
-const PostList = () => {
-  const { searchTerm, selectedCategory } = useBlogStore();
+type Props = {
+  searchTerm: string;
+  selectedCategory: string;
+};
 
+const PostList = ({ searchTerm, selectedCategory }: Props) => {
   const filtered = postsData.filter((post) => {
     const matchesCategory = selectedCategory
       ? post.categories.includes(selectedCategory)
@@ -19,21 +20,17 @@ const PostList = () => {
   });
 
   return (
-    <div>
-      <h3>Lista de Posts</h3>
-      <ul>
-        {filtered.map((post) => (
-          <li key={post._id}>
-            <h4>{post.title}</h4>
-            <p>{post.content.substring(0, 150)}...</p>
-            <p>
-              <strong>{post.author}</strong> — {post.date}
-            </p>
-          </li>
-        ))}
-      </ul>
+    <div className={styles.gridContainer}>
+      {filtered.map((post) => (
+        <div key={post._id} className={styles.card}>
+          <h4 className={styles.title}>{post.title}</h4>
+          <p className={styles.excerpt}>{post.content.substring(0, 150)}...</p>
+          <p className={styles.date}>{post.date}</p>
+        </div>
+      ))}
     </div>
   );
 };
 
 export default PostList;
+4
