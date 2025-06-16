@@ -1,17 +1,16 @@
 // src/app/post/[id]/page.tsx
 "use client";
 
-import { use } from "react";
 import { useRouter } from "next/navigation";
 import postsData from "@/data/posts.json";
 import styles from "@/styles/postPage.module.css";
 
-interface Params {
-  id: string;
-}
-
-export default function PostPage({ params }: { params: Promise<Params> }) {
-  const { id } = use(params);
+export default function PostPage({
+  params,
+}: {
+  params: { id: string };
+}) {
+  const { id } = params;
   const router = useRouter();
   const post = postsData.find((p) => p._id === id);
 
