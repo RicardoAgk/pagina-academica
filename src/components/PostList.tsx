@@ -29,20 +29,24 @@ export default function PostList() {
 
   return (
     <section className={styles.container}>
-      <div className={styles.gridContainer}>
-        {filtered.map((post) => (
-          <Link key={post._id} href={`/post/${post._id}`} className={styles.card}>
-            <div>
-              <h3 className={styles.title}>{post.title}</h3>
-              <p className={styles.excerpt}>{post.content.slice(0, 100)}...</p>
-            </div>
-            <div className={styles.meta}>
-              <div className={styles.category}>{post.categories[0]}</div>
-              <div className={styles.date}>{post.date}</div>
-            </div>
-          </Link>
-        ))}
-      </div>
+      {filtered.length === 0 ? (
+        <p className={styles.noPosts}>No posts found</p>
+      ) : (
+        <div className={styles.gridContainer}>
+          {filtered.map((post) => (
+            <Link key={post._id} href={`/post/${post._id}`} className={styles.card}>
+              <div>
+                <h3 className={styles.title}>{post.title}</h3>
+                <p className={styles.excerpt}>{post.content.slice(0, 100)}...</p>
+              </div>
+              <div className={styles.meta}>
+                <div className={styles.category}>{post.categories[0]}</div>
+                <div className={styles.date}>{post.date}</div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      )}
     </section>
   );
 }
