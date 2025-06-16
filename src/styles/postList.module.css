@@ -70,3 +70,10 @@
 .category {
   text-transform: capitalize;
 }
+
+.noPosts {
+  text-align: center;
+  font-size: 1.25rem;
+  margin: 2rem 0;
+  color: var(--color-muted);
+}
